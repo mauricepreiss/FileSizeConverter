@@ -11,7 +11,7 @@ etc.
 
 Just add it to your project via "Right Click > References > Add Reference", then select the DLL and happy converting. ;)
 
-How to add a reference in Visual Studio:
+How to add a reference in Visual Studio: https://learn.microsoft.com/en-us/visualstudio/ide/managing-references-in-a-project?view=vs-2022
 
 
 
