@@ -28,8 +28,9 @@ Use like this:
 ```csharp
   string driveinfo = "Windows";
   DriveInfo drive = new DriveInfo(driveinfo);
-  int size = Convert.ToInt32(drive.TotalSize);
+  long size = drive.TotalSize;
   string GB = size.ToSize(SizeUnits.GB, DisplayUnitState.Shown)
+  // Example Output: 2,55GB
 ```
 
 ## Enums
