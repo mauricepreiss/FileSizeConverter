@@ -25,9 +25,9 @@ namespace FileSizeConverter
         public static string ToSize(this long value, SizeUnits unit, DisplayUnitState state)
         {
             if (state == DisplayUnitState.Shown)
-                return (value / (double)Math.Pow(1000, (long)unit)).ToString("0.00" + unit);
+                return (value / (double)Math.Pow(1024, (long)unit)).ToString("0.00" + unit);
             else if (state == DisplayUnitState.Hidden)
-                return (value / (double)Math.Pow(1000, (long)unit)).ToString("0.00");
+                return (value / (double)Math.Pow(1024, (long)unit)).ToString("0.00");
             else
                 throw new Exception("Not a valid DisplayUnitState");
         }
